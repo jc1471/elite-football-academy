@@ -1,0 +1,299 @@
+/* font face */
+
+
+.josefin-sans {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  .open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+  
+.orbitron {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+/* Universal Styles*/
+
+html {
+    font-size: 2.2vw;
+    font-family: "Open Sans";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-style: normal;
+}
+
+/* Media Quieries */
+
+@media screen and (min-width: 426px) {
+    .grid-container {
+      grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Title and Nav Header Section*/
+
+/* Flex */
+/*
+.title-header {
+    display: flex;
+}
+*/
+/* Grid */
+.title-header {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto 1fr auto;
+    margin-block: 0.5rem;
+}
+
+.title {
+    display: inline-block;
+    text-align: left;
+}
+
+.title h2 {
+    font-family: "Josefin Sans";
+    font-size: 4.5rem;
+    margin: 0;
+    margin-bottom: 0;
+}
+
+.title p {
+    font-size: 0.75rem;
+    font-weight: 150;
+    display: inline-block;
+    margin: 0;
+    margin-top: -0.75rem;
+    margin-left: 0.3rem;
+    border-top: solid white 0.5px;
+}
+
+/*
+.column-3 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: end;
+    border: solid 1px yellow;
+}
+
+.languages {
+    border: 1px solid green;
+    align-items: end;
+}
+
+.column-3.nav {
+    border: 2px solid pink;
+}
+
+.title-header nav.ul.li {
+    text-decoration: none;
+    padding-inline: 1.5rem;
+}
+
+.title-header nav.ul {
+
+}
+*/
+/* Column 3 */
+.column-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Languages */
+
+.languages ul {
+    display: flex;
+    justify-content: end;
+    margin-block: 0.35rem;
+    padding-right: 1rem;
+}
+
+.languages li {
+    height: 0.75rem;
+    width: 1.25rem;
+    margin-inline: 5px;
+    border-radius: 2px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#en {
+    background-image: url(./images/uk-flag.webp);
+}
+#es {
+    background-image: url(./images/spain-flag.png);
+}
+#ca {
+    background-image: url(./images/catalan-flag.png);
+}
+
+
+/* Contents */
+
+.column-3 nav ul {
+    display: flex;
+    justify-items: end;
+    margin-block: 0.35rem;
+    padding-right: 1rem;
+    font-size: 0.8rem;
+}
+
+.column-3 nav ul li {
+    margin-inline: 1.5rem;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Banner Section */
+
+.main-banner {
+    width: 100%;
+    height: auto;
+}
+
+.background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    position: relative;
+
+}
+
+.hero-text {
+    font-family: "Bebas Neue";
+    font-weight: 100;
+    font-size: 1.6rem;
+    font-style: italic;
+    letter-spacing: 3;
+    z-index: 1;
+    position: absolute;
+    text-align: left;
+    text-wrap: wrap;
+    width: 70%;
+    top: 60%;
+    left: 2%;
+    background: none;
+}
+
+.hero-text h3 {
+    background: rgba(0, 0, 0, 0.4); /* Adds slight background for readability */
+
+}
+
+.hero-text button {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 0.65rem;
+    font-weight: 100;
+    line-height: 2;
+    background: black;
+    color: gold;
+    margin-top: 2rem;
+    border-radius: 40px;
+    padding-inline: 1rem;
+    display: flex;
+    justify-self: center;
+}
+
+/* Our Philosophy Section */
+
+.philosophy {
+    display: inline-block;
+    justify-content: center;
+}
+
+.philosophy h2 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.grid-container {
+    text-align: left;
+    display: grid;
+    /*grid-template-columns: 1fr 1fr;*/
+    margin-inline: 5%;
+    background: none;
+}
+
+.ph-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-inline: 2rem;
+}
+
+.info-box {
+    background-color: gray;
+    color: black;
+    border-radius: 35px;
+    margin: 2.5rem;
+}
+
+.info-box h3 {
+    border-bottom: solid 1px white;
+    padding-block: 1.3rem;
+}
+
+.info-box p {
+    font-weight: 120;
+    font-size: 0.8rem;
+    padding-top: 1.3rem;
+
+}
+
+/*
+font-size: clamp(1rem, 3.5vw, 2.25rem);
+@media screen and (min-width: 426px) {
+    #properties {
+      display: none;
+      margin: 0;
+    }
+*/
