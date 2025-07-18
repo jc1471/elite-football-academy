@@ -1,8 +1,8 @@
 const translations = {
     en: {
-        calendar: "Calendar",
-        info: "Info",
-        concept: "Concept",
+        home: "HOME",
+        calendar: "CALENDAR",
+        contact: "CONTACT",
         hero: "Shaping the future of football—on and off the pitch.",
         callToAction: "SCHEDULE A VISIT",
         phTitle: "Our Philosophy",
@@ -16,9 +16,9 @@ const translations = {
         ph4p: "We shape individuals, not just athletes. Our academy integrates leadership training, mental resilience coaching, and teamwork-building exercises to prepare players for life beyond football. Whether they pursue a professional career in sports or take their skills into other fields, our graduates leave with confidence, discipline, and the ability to perform under pressure.",
     },
     es: {
-        calendar: "Calendario de Actividades",
-        info: "Información",
-        concept: "Nuerstro Concepto",
+        home: "INICIO",
+        calendar: "CALENDARIO DE ACTIVIDADES",
+        contact: "CONTACTO",
         hero: "Forjando el futuro del fútbol — dentro y fuera del campo",
         callToAction: "SOLICITA TU VISITA",
         phTitle: "Nuestra Filosofía",
@@ -32,9 +32,9 @@ const translations = {
         ph4p: "Porque el partido más importante se juega fuera del campo. En Elite enseñamos liderazgo, comunicación, autocontrol y trabajo en equipo. Nuestro objetivo es que cada jugador salga preparado no solo para competir, sino para afrontar cualquier reto en la vida con mentalidad de élite.",
     },
     ca: {
-        calendar: "Calendari d'Activitats",
-        info: "Informació",
-        concept: "El Nostre Concepte",
+        home: "INICI",
+        calendar: "CALENDARI D'ACTIVITATS",
+        contact: "CONTACTE",
         hero: "Donant forma al futur del futbol — dins i fora del camp",
         callToAction: "DEMANA LA TEVA VISITA",
         phTitle: "La Nostra Filosofia",
