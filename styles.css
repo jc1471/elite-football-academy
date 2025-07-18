@@ -85,12 +85,6 @@ li {
 
 /* Title and Nav Header Section*/
 
-/* Flex */
-/*
-.title-header {
-    display: flex;
-}
-*/
 /* Grid */
 .title-header {
     display: grid;
@@ -121,33 +115,6 @@ li {
     border-top: solid white 0.5px;
 }
 
-/*
-.column-3 {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    align-items: end;
-    border: solid 1px yellow;
-}
-
-.languages {
-    border: 1px solid green;
-    align-items: end;
-}
-
-.column-3.nav {
-    border: 2px solid pink;
-}
-
-.title-header nav.ul.li {
-    text-decoration: none;
-    padding-inline: 1.5rem;
-}
-
-.title-header nav.ul {
-
-}
-*/
 /* Column 3 */
 .column-3 {
     display: flex;
@@ -302,6 +269,42 @@ nav {
     padding-top: 1.3rem;
 
 }
+
+/* Contact Page */
+
+.contact-section h1 {
+    text-align: center;
+    margin-top: 1rem;
+}
+.contact-grid {
+    text-align: left;
+    display: grid;
+    margin-inline: 5%;
+    background: none;
+}
+
+.contact-grid form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-inline: 2rem;
+}
+
+.contact-map {
+      display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-inline: 2rem;
+}
+
+/*
+@media (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+  }
+}
+*/
+
 
 /*
 font-size: clamp(1rem, 3.5vw, 2.25rem);
