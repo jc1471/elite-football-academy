@@ -40,36 +40,35 @@
         <section class="contact-section">
             <h1 data-i18n="contactHeading">Contact Us</h1>
 
-            
-            <div class="contact-grid">
-                <form id="contact-form">
-                    <label data-i18n="nameLabel" for="name">Name</label>
-                    <input type="text" id="name" name="name" required />
+                <div class="contact-grid grid-item">
+                    <form id="contact-form">
+                        <!--<label data-i18n="nameLabel" for="name">Name</label>-->
+                        <input type="text" id="name" name="name" required placeholder="Name" />
 
-                    <label data-i18n="emailLabel" for="email">Email</label>
-                    <input type="email" id="email" name="email" required />
+                        <!--<label data-i18n="emailLabel" for="email">Email</label>-->
+                        <input type="email" id="email" name="email" required placeholder="Email" />
 
-                    <label data-i18n="subjectLabel" for="subject">Subject</label>
-                    <select id="subject" name="subject">
-                        <option value="general" data-i18n="generalOption">General Inquiry</option>
-                        <option value="visit" data-i18n="visitOption">Schedule a Visit</option>
-                        <option value="enroll" data-i18n="enrollOption">Enrollment</option>
-                    </select>
+                       <!-- <label data-i18n="subjectLabel" for="subject">Subject</label>-->
+                        <select id="subject" name="subject">
+                            <option value="general" data-i18n="generalOption">General Inquiry</option>
+                            <option value="visit" data-i18n="visitOption">Schedule a Visit</option>
+                            <option value="enroll" data-i18n="enrollOption">Enrollment</option>
+                        </select>
 
-                    <label data-i18n="messageLabel" for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
+                       <!-- <label data-i18n="messageLabel" for="message">Message</label>-->
+                        <textarea id="message" name="message" required placeholder="Message"></textarea>
 
-                    <button type="submit" data-i18n="submitButton">Send Message</button>
-                </form>
+                        <button type="submit" data-i18n="submitButton">Send Message</button>
+                    </form>
 
-                <div class="contact-map">
-                <!-- Either a Google Maps iframe or an image placeholder -->
-                <iframe 
-                    src="https://maps.google.com/maps?q=barcelona&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                    width="100%" height="300" style="border:0;" allowfullscreen=""
-                    loading="lazy"></iframe>
-                </div>
-            </div>
+                    <div class="contact-map grid-item">
+                    <!-- Either a Google Maps iframe or an image placeholder -->
+                    <iframe 
+                        src="https://maps.google.com/maps?q=barcelona&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="300" style="border:0;" allowfullscreen=""
+                        loading="lazy"></iframe>
+                    </div>
+                </div>   
         </section>
     </main>
 

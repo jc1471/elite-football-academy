@@ -274,36 +274,72 @@ nav {
 
 .contact-section h1 {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
+
 .contact-grid {
-    text-align: left;
-    display: grid;
-    margin-inline: 5%;
-    background: none;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 15px;
 }
+
 
 .contact-grid form {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-inline: 2rem;
+    margin-inline: 1rem;
+    flex: 1;
 }
+
+
 
 .contact-map {
-      display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-inline: 2rem;
+    margin-inline: 0.5rem;
+    flex: 1;
+    height: 100%;
 }
 
-/*
+form input,
+form textarea,
+form select,
+form button {
+    font-family: "Open Sans";
+    font-size: 0.75rem;
+    border: solid black 1px;
+    border-radius: 10px;
+    padding: 15px;
+    margin-block: 25px;
+}
+
+form button {
+    transition: background-color 0.5s ease;
+}
+
+form button:hover {
+    background-color: rgb(14, 14, 14);
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .contact-grid {
     flex-direction: column;
   }
+
+  form input,
+  form textarea,
+  form select,
+  form button {
+      font-size: 1rem;
+      padding: 15px;
+        margin-block: 15px;
+    }
 }
-*/
 
 
 /*
